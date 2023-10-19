@@ -1,0 +1,12 @@
+@startuml
+actor "Application Owner" as ao
+artifact "Application Profile" as ap
+artifact "Potential Findings" as pff
+control "Multi-Scanner Tool (MST)" as mst
+artifact "Real Findings" as rff
+
+ao -> mst : Run
+mst <-up- pff : Read
+mst <-up- ap : Read
+mst -> rff : Create
+@enduml
