@@ -1,7 +1,7 @@
 = Show PUML in ADOC
 
 [plantuml, dummy, svg]
-----
+....
 @startuml
 actor "Application Owner" as ao
 artifact "Application Profile" as ap
@@ -14,4 +14,4 @@ mst <-up- pff : Read
 mst <-up- ap : Read
 mst -> rff : Create
 @enduml
-----
+....
